@@ -82,8 +82,8 @@ public class WebcrabController {
             Map map = new HashMap();
             map.put("title", title);
             map.put("description", description);
-            map.put("url", url);
-            map.put("imgUrl", imageUrl);
+            map.put("requestUrl", url);
+            map.put("firstImgUrl", imageUrl);
             map.put("imgUrlArray", imageUrlArray);
 
             return new ResponseEntity<>(new ResponseWrapper(map), HttpStatus.OK);
